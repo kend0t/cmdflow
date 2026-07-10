@@ -1,0 +1,29 @@
+[package]
+name = "cmdflow"
+version = "0.1.0"
+edition = "2021"
+description = "A terminal workflow shortcut manager — save and run multi-command workflows with a few keystrokes"
+
+[dependencies]
+# CLI argument parsing
+clap = { version = "4", features = ["derive"] }
+
+# TUI framework
+ratatui = "0.29"
+crossterm = "0.28"
+
+# Serialization
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# Config directory
+dirs = "6"
+
+# Timestamps
+chrono = { version = "0.4", features = ["serde"] }
+
+# Colored terminal output (for executor)
+colored = "3"
+
+# Unicode width for text handling
+unicode-width = "0.2"
